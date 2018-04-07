@@ -104,14 +104,17 @@ def menu():
     print("")
     type_out("Welcome.")
     type_out("Please enter your age in whole years:")
-    saved_age = int(input())
-    type_out("You have entered {} years old".format(saved_age))
+    try:
+        saved_age = int(input())
+        age = saved_age
+    except:
+        menu()
+    type_out("You have entered {} years old".format(age))
     type_out("If this is correct please enter '!yes'. If incorrect enter '!no'.")
     saved_input = input()
     if not check_input(saved_input):
         menu()
     else:
-        age = saved_age
         type_out(print_days_on_earth(age))
 
 
