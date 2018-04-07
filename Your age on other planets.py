@@ -1,5 +1,5 @@
 """The Module will open a terminal window for you to work with.
-The terminal window will take in your age and a planet and,
+The terminal window will take in your age and then a planet and,
 return your age on that planet.
 """
 
